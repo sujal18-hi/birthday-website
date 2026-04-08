@@ -1,0 +1,113 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(198, 150, 183);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 16px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+h1 {
+  color: #37162b;
+  font-size: 48px;
+  font-family: Pacifico, cursive;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.65);
+  letter-spacing: 1px;
+  padding: 0 16px;
+}
+img {
+  width: 300px;
+  height: 500px;
+  display: block;
+  margin: 0;
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+  border: 6px solid rgba(255, 214, 236, 0.85);
+}
+button {
+  display: inline-block;
+  padding: 18px 24px;
+  background: linear-gradient(135deg, #ffb6d9 0%, #ff90c1 100%);
+  color: #3f1a2b;
+  text-decoration: none;
+  border: 2px solid #ff7fb2;
+  border-radius: 999px;
+  box-shadow: 0 10px 20px rgba(255, 107, 160, 0.25);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  margin: 0;
+  width: min(220px, 100%);
+}
+
+.button-row a {
+  width: 100%;
+  max-width: 260px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(255, 107, 160, 0.35);
+  background: linear-gradient(135deg, #ff90c1 0%, #ffb6d9 100%);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 16px rgba(255, 107, 160, 0.2);
+}
+
+@media (max-width: 520px) {
+  .container {
+    gap: 18px;
+    padding: 24px 12px;
+  }
+
+  h1 {
+    font-size: 34px;
+    padding: 0 12px;
+    letter-spacing: 0.5px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-width: 5px;
+  }
+
+  .button-row {
+    flex-direction: row;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .button-row a {
+    width: min(48%, 160px);
+  }
+
+  button {
+    width: 100%;
+    font-size: 16px;
+    padding: 16px 20px;
+  }
+}
