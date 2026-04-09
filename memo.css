@@ -1,21 +1,19 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
+  display: block;
   margin: 0;
   background-color: rgb(198, 150, 183);
   padding-top: 20px;
+  min-height: auto;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  align-items: start;
   gap: 24px;
   padding: 32px 16px;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
