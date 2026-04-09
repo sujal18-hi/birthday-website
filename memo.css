@@ -114,7 +114,8 @@ button {
   }
 
   img {
-    height: 220px;
+    height: auto;
+    max-height: 220px;
   }
 
   .photo-item p {
@@ -154,7 +155,8 @@ button {
   }
 
   img {
-    height: 200px;
+    height: auto;
+    max-height: 200px;
     border-radius: 12px;
   }
 
