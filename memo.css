@@ -167,7 +167,8 @@ button {
   img {
     height: auto;
     max-height: 400px;
-    border-radius: 12px;
+    border-radius: 0px;
+    align-items: center;
   }
 
   .photo-item p {

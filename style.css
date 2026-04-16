@@ -25,7 +25,7 @@ h1 {
   letter-spacing: 1px;
   padding: 0 16px;
 }
-img {
+video {
   width: 200px;
   height: 400px;
   display: block;
@@ -77,7 +77,7 @@ button:active {
     letter-spacing: 0.5px;
   }
 
-  img {
+  video {
     width: 100%;
     max-width: 280px;
     height: auto;
